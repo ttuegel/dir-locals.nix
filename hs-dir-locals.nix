@@ -1,4 +1,6 @@
-(import ./shell.nix {}).env.overrideAttrs (attrs: {
+file:
+
+(import file {}).env.overrideAttrs (attrs: {
   name = "dir-locals.el";
   phases = "buildPhase";
   buildPhase = ''
